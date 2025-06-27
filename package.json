@@ -1,21 +1,22 @@
 {
   "name": "pimlico-tutorial-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template repository for Pimlico tutorials (https://docs.pimlico.io/tutorial)",
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts"
+    "dev": "bun run --watch index.ts",
+    "start": "bun run index.ts"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "alchemy-sdk": "^3.6.1",
     "dotenv": "^16.3.1",
     "permissionless": "^0.2.0",
     "viem": "^2.20.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.10",
-    "tsx": "^3.13.0"
+    "@types/node": "^20.11.10"
   }
 }
